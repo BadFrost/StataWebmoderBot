@@ -22,7 +22,7 @@ mongoUtil.connectToServer(async (err) => {
     console.log('DB Connected!')
 });
 
-let dev = true;
+let dev = false;
 
 bot.telegram.deleteWebhook().then(res => {
     if (res === true) {
